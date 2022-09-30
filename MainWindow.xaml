@@ -1,0 +1,22 @@
+﻿<Window x:Class="T2_ej4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T2_ej4"
+        mc:Ignorable="d"
+        Title="Texto chiquituso" Height="460" Width="650" Icon="assets/Barkerbaggies-Pool-Ball-Ball-1.ico">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFFFEFE" Offset="1"/>
+                <GradientStop Color="#FFF04ED3"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="caracteresTextBox" HorizontalAlignment="Left" Height="350" Margin="25,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" AcceptsReturn="True" TextChanged="caracteresTextBox_TextChanged" FontSize="18"/>
+
+        <TextBlock x:Name="contadorTextBlock" HorizontalAlignment="Left" Margin="529,380,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Width="41" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="570,380,0,0" TextWrapping="Wrap" Text="/140" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>
